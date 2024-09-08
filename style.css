@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif ;
+  
+}
+/* header start      */
+#navbar img{
+    width: 80px;
+   margin-left: 100px;
+}
+header{
+    height: 100vh;
+    background: url(img/home_bg.jpeg) center center/cover no-repeat;
+}
+#navbar{
+display: flex;
+justify-content: space-between;
+
+align-items: center;
+}
+ul{
+    list-style: none;
+   
+}
+#contener{
+    
+    max-width: 1100px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+#navbar ul li a{
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+}
+#navbar ul li a:hover{
+    border-bottom: 2px solid orange;
+   
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+
+}
+.cont h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: white;
+
+
+}
+.cont p{
+    margin: 20px 0 40px;
+    color: white;
+}
+.prim-txt{
+color: orange;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0,0.6);
+
+}
+header *{
+    z-index: 5;
+}
+.btn{
+
+  display: inline-block;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 15px;
+
+}
+.btn-prime{
+    color: white;
+border: 2px solid #fff;
+
+}
+.btn-prime:hover{
+    background: orange;
+    transition: .5s;
+
+}
+/* end header*/
+#about{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+#about #title,
+#offers #title,#menu #title{
+text-align: center;
+margin-bottom: 4rem;
+}
+#about h2,#offers h2,#menu h2,#gallery h2{
+    font-size: 40px;
+    color: #383848;
+    margin-bottom: 20px;
+}
+#offers h2{
+    color: orange;
+}
+#offers #title p{
+    color: white;
+    font-weight: 300;
+}
+#about #title p,#menu #title p{
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+#about-cont{
+    display: flex;
+    justify-content: space-between;
+}
+#about-cont img{
+    width: 450px;
+}
+.btn-sec{
+    background: #383848;
+    color: white;
+    margin-top: 10px;
+    padding: 12px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+.btn-sec:hover{
+    background: orange;
+    transition: .5s;
+}
+#offers{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background:url(./img/offer-background.jpg) center center/ cover fixed ;
+}
+#offers .offer-items{
+    display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+margin: 20px;
+}
+#offers .offer-items img{
+    width: 200px;
+}
+#offers .offer-items p{
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+#offers .offer-items h3{
+    color: orange;
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin: 10px 0;
+}
+#prm-txt{
+    color: orange;
+    font-size: 18px;
+    margin-left: 5px;
+}
+#menu{
+    background: #f4f4f4;
+    padding: 5rem 0;
+}
+#menu #menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu #menu-items #menu-item img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+#menu #menu-items #menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#menu #menu-items #menu-item h3{
+    color: #383848;
+border-bottom: 1px dashed #c2bdbd;
+padding-bottom: 10px;
+position: relative;
+margin-bottom: 10px;
+}
+#menu #menu-items #menu-item span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#menu button{
+    display: block;
+    margin: 20px auto;
+    background: orange;
+    color: white;
+}
+#menu button:hover{
+    background: #383848;
+    transition: .5s;
+    cursor: pointer;
+}
+#daytime{
+    background: url(./img/daytime_bg.jpeg)center center/ cover fixed no-repeat;
+    color: #fff;
+    text-align: center;
+}
+#daytime #daytime-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+#daytime #daytime-items h3{
+    font-size: 32px;
+    margin: 20px 0;
+    color: #383848;
+    font-style: italic;
+}
+#daytime #daytime-items p{
+    font-size: 20px;
+    font-weight: 300;
+
+
+}
+#gallery{
+    background: url(./img/offer-background.jpg) center center / cover fixed no-repeat;
+    padding: 8rem 0 6rem 0;
+}
+#gallery h2{
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+#gallery #img-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#gallery #img-gallery img{
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.7;
+}
+#gallery #img-gallery img:hover{
+    opacity: 1;
+}
+#contact-info{
+    display: flex;
+}
+#btn{
+    width: 50px;
+    height: 50px;
+    background: orange;
+  border: none;
+cursor: pointer;
+position: fixed;
+bottom: 10px;
+right: 10px;
+border-radius: 30px;
+display: none;
+font-size: 18px;
+text-align: center;
+
+}
+
+
+
+
+
